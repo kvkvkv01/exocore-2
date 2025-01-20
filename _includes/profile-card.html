@@ -1,0 +1,30 @@
+<div class="sidebar-card profile">
+  <div class="profile">
+    <a href="{{ site.data.user.profile_link | relative_url }}">
+      <img class="profile-pic" src="{{ site.data.user.profile_pic | relative_url }}" alt="Profile Picture">
+    </a>
+    <a class="silent-link" href="{{ site.data.user.profile_link | relative_url }}">
+      <h1 class="user-name silent-link">{{ site.data.user.user_name }}</h1>
+    </a>
+    <hr>
+  </div>
+  <!-- Rest of your sidebar links remain the same -->
+  <div class="sidebar-link-box profile">
+    <a href="/pages/all-articles">ARTICLES</a>
+    <a href="/pages/all-journal">JOURNAL</a>
+    <a href="/pages/all-wiki">WIKI</a>
+    <a href="/pages/tags">INDEX</a>
+  </div>
+  <hr>
+  <div class="sidebar-link-box profile">
+    <a href="https://x.com/" target="_blank">X</a>
+    <a href="/ring">WEBRING</a>
+    <a href="/soma">rtIRC</a>
+  </div>
+  <hr>
+  <div class="sidebar-link-box profile">
+    <a href="/pages/library">LIBRARY</a>
+    <a href="/pages/gallery">GALLERY</a>
+    <a href="/pages/archive" target="_blank">ARCHIVE</a>
+  </div>
+</div>

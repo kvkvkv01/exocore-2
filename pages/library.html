@@ -1,0 +1,86 @@
+---
+layout: page
+title: Library
+---
+
+<main>
+<section class="container-lg">
+  <div class="leftcolumn">
+    {% include profile-card.html %}
+  </div>
+
+  <div class="midcolumn">
+    <div class="index-card">
+      <div>
+        <h1>Document Library <a href="/pages/gallery">(See Image Gallery)</a></h1>
+      </div>
+
+      {% assign library_files = site.static_files | where_exp: "file", "file.path contains '/library'" | sort: "path" %}
+      {% assign themes = "" | split: "" %}
+      
+      {% for file in library_files %}
+        {% assign path_parts = file.path | split: "/" %}
+        {% assign theme = path_parts[2] %}
+        {% unless themes contains theme %}
+          {% assign themes = themes | push: theme %}
+        {% endunless %}
+      {% endfor %}
+
+      {% assign sorted_themes = themes | sort %}
+      
+      {% for theme in sorted_themes %}
+        <div class="theme-section">
+          <h2>{{ theme }}</h2>
+          <div class="theme-content">
+            {% assign theme_files = library_files | where_exp: "file", "file.path contains theme" | sort: "basename" %}
+            {% for library_item in theme_files %}
+              <a class="index-anchor" href="{{ library_item.path }}">
+                <div class="library-item">
+                  <div class="library-item-title">{{ library_item.basename }}</div>
+                  <br>
+                  <div class="library-item-filetype">{{ library_item.extname | upcase | remove: "." }}</div>
+                </div>
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+</main>
+
+<style>
+.theme-section {
+  margin-bottom: 2rem;
+}
+
+.theme-section h2 {
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.theme-content {
+  padding-left: 1rem;
+}
+
+.library-item {
+  margin: 0.5rem 0;
+}
+</style>
+
+<script type="text/javascript">
+  // Hack: Replace page-link with "Page Title"
+  document.querySelectorAll(".markdown-body a[title]").forEach((a) => {
+    a.innerText = a.title;
+  });
+  // Hack: Remove .md extension from wikilinks to get the html in jekyll
+  document.querySelectorAll("a").forEach(l => {
+    if (l.href.endsWith('.md')) {
+      l.href = l.href.substring(0, l.href.length-3)
+    }
+  })
+</script>

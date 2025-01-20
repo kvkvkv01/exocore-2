@@ -1,0 +1,81 @@
+title: Exocore-2
+description: A navigable, organised hypertext personal knowledge base
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+data_dir: exocore/data
+
+# Asset settings
+defaults:
+  - scope:
+      path: "assets/imgs"
+    values:
+      image: true
+  - scope:
+      path: "assets"
+    values:
+      layout: null
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-optional-front-matter
+  - jekyll-default-layout
+  - jekyll-relative-links
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-last-modified-at
+  - jekyll-redirect-from
+  - jekyll-wikilinks
+
+collections:
+  wiki:
+    output: true
+    permalink: /wiki/:title
+  articles:
+    output: true
+    permalink: /articles/:title
+  journal:
+    output: true
+    permalink: /journal/:title
+  scrapbook:
+    output: true
+    permalink: /scrapbook/:title
+
+defaults:
+  - scope:
+      path: ""
+      type: wiki
+    values:
+      layout: wiki
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: article
+  - scope:
+      path: ""
+      type: journal
+    values:
+      layout: journal
+
+sass:
+  sass_dir: exocore/_sass
+  style: compressed # Optional, for minification
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - exocore

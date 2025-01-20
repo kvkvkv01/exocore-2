@@ -1,0 +1,13 @@
+---
+published: true
+subtitle:
+date: 2025-01-20
+tags: remilia
+foam_template:
+  filepath: '_journal/2025-01-jade-post.md'
+  name: Journal Entry
+---
+
+# Jade post
+
+[Cyber](https://en.wikipedia.org/wiki/Cyber) [Asiatic](https://en.wikipedia.org/wiki/Asiatic) [Mystic](https://en.wikipedia.org/wiki/Mystic) [Synthesis](https://en.wikipedia.org/wiki/Synthesis) [Return](https://en.wikipedia.org/wiki/Return) [Eastern](https://en.wikipedia.org/wiki/Eastern) [Technomarket](https://en.wikipedia.org/wiki/Technomarket) [Hegemon](https://en.wikipedia.org/wiki/Hegemony)... [Jade](https://en.wikipedia.org/wiki/Jade) [McDonalds](https://en.wikipedia.org/wiki/McDonald%27s) [Sun](https://en.wikipedia.org/wiki/Sun) [Poem](https://en.wikipedia.org/wiki/Poetry)... [Pacific Ocean](https://en.wikipedia.org/wiki/Pacific_Ocean) [Disappear](https://en.wikipedia.org/wiki/Disappear)... ([30](https://en.wikipedia.org/wiki/30_(number)) [billion](https://en.wikipedia.org/wiki/Billion) [Eagles](https://en.wikipedia.org/wiki/Eagle) [XxX](https://en.wikipedia.org/wiki/XXX) 991hz) [Platinum](https://en.wikipedia.org/wiki/Platinum) [Prison](https://en.wikipedia.org/wiki/Prison) [Duplication](https://en.wikipedia.org/wiki/Duplication) [Facility](https://en.wikipedia.org/wiki/Facility)... [Astral](https://en.wikipedia.org/wiki/Astral) [Screen-heating](https://en.wikipedia.org/wiki/Screen_heating) [Marble](https://en.wikipedia.org/wiki/Marble) [Moon](https://en.wikipedia.org/wiki/Moon) [Wire](https://en.wikipedia.org/wiki/Wire) [Theft](https://en.wikipedia.org/wiki/Theft). [Jade](https://en.wikipedia.org/wiki/Jade) [Dragon](https://en.wikipedia.org/wiki/Dragon) [Million](https://en.wikipedia.org/wiki/Million) [Sex](https://en.wikipedia.org/wiki/Sex) [Control](https://en.wikipedia.org/wiki/Control) [Dollars](https://en.wikipedia.org/wiki/Dollars) [Professional](https://en.wikipedia.org/wiki/Professional) [Power](https://en.wikipedia.org/wiki/Power). [Luxury](https://en.wikipedia.org/wiki/Luxury) [Million](https://en.wikipedia.org/wiki/Million) [Yen](https://en.wikipedia.org/wiki/Japanese_yen) [Diamond](https://en.wikipedia.org/wiki/Diamond) [Power](https://en.wikipedia.org/wiki/Power) ([Exit](https://en.wikipedia.org/wiki/Exit) [Enclave](https://en.wikipedia.org/wiki/Enclave_and_exclave)) [POLICE STATE](https://en.wikipedia.org/wiki/Police_state) [BATH HOUSE](https://en.wikipedia.org/wiki/Public_bathing)[™](https://en.wikipedia.org/wiki/Trademark_symbol) [Holding](https://en.wikipedia.org/wiki/Holding) [Corporation](https://en.wikipedia.org/wiki/Corporation). [Yin](https://en.wikipedia.org/wiki/Yin) [Massage](https://en.wikipedia.org/wiki/Massage) [Hot](https://en.wikipedia.org/wiki/Hot) [Egg](https://en.wikipedia.org/wiki/Egg)...

@@ -1,0 +1,12 @@
+<div class="collapsible">
+<div class="collapse-preview">{{ include.preview }}</div>
+<button type="button" class="collapse-trigger">
+<span class="collapse-icon">▶</span>
+Show full note
+</button>
+<div class="collapse-content">
+<div class="collapse-text">
+{{ include.content | markdownify }}
+</div>
+</div>
+</div>
