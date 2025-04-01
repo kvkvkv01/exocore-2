@@ -1,0 +1,16 @@
+[build]
+  command = "jekyll build"
+  publish = "_site"
+
+[build.environment]
+  JEKYLL_ENV = "production"
+
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+# Redirect default Netlify subdomain to primary domain
+[[redirects]]
+  from = "https://exocore-2.netlify.app/*"
+  to = "https://<your-domain>.com/:splat"
+  status = 301
+  force = true 
