@@ -4,6 +4,7 @@
 
 [build.environment]
   JEKYLL_ENV = "production"
+  RUBY_VERSION = "2.7.2"
 
 [[plugins]]
   package = "@netlify/plugin-sitemap"
