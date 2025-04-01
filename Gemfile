@@ -18,7 +18,7 @@ gem "jekyll-redirect-from", "0.16.0"
 gem "jekyll-feed", "0.15.1"
 gem 'jekyll-wikilinks', '0.0.11'
 gem "ruby-graphviz", "1.2.5"
-gem "jekyll-graph", "0.1.3"
+gem "jekyll-graph"
 gem 'csv', "3.2.0"
 gem 'base64', "0.1.1"
 gem 'bigdecimal', "3.1.3"
