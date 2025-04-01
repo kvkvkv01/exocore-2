@@ -1,10 +1,12 @@
 [build]
-  command = "[ -f Gemfile.lock ] && rm Gemfile.lock || echo 'No Gemfile.lock' && gem install jekyll -v 4.2.1 && gem install bundler -v 2.1.4 && bundle _2.1.4_ install && bundle _2.1.4_ exec jekyll build"
+  command = "rm -f Gemfile.lock && gem install bundler -v 2.1.4 && gem install jekyll -v 4.2.1 && bundle _2.1.4_ install --no-deployment && bundle _2.1.4_ exec jekyll build"
   publish = "_site"
 
 [build.environment]
   RUBY_VERSION = "2.7.2"
   BUNDLER_VERSION = "2.1.4"
+  NETLIFY_USE_BUNDLER = "false"
+  SKIP_BUNDLE_INSTALL = "true"
 
 [[plugins]]
   package = "@netlify/plugin-sitemap"
