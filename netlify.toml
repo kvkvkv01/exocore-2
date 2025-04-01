@@ -3,8 +3,9 @@
   publish = "_site"
 
 [build.environment]
-  RUBY_VERSION = "2.7.2"
-  BUNDLE_WITHOUT = "development test"
+  NETLIFY_USE_YARN = "true"
+  NODE_VERSION = "16"
+  RUBY_VERSION = "false"
 
 [[plugins]]
   package = "@netlify/plugin-sitemap"

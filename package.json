@@ -1,12 +1,12 @@
 {
   "name": "exocore-2",
   "version": "1.0.0",
-  "description": "Exocore-2 Jekyll site",
+  "description": "Exocore Jekyll site",
   "scripts": {
-    "build": "rm -f Gemfile.lock && bundle install && bundle exec jekyll build"
+    "install": "apt-get update && apt-get install -y ruby-full build-essential",
+    "build": "chmod +x netlify-build.sh && ./netlify-build.sh"
   },
   "engines": {
-    "node": "16.x",
-    "npm": "8.x"
+    "node": "16.x"
   }
 } 
