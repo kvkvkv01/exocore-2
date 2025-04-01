@@ -1,8 +1,15 @@
 #!/bin/bash
 set -e
 
-echo "Removing Gemfile.lock..."
+echo "Removing dependency files..."
 rm -f Gemfile.lock
+rm -rf .bundle
+rm -rf vendor
+
+echo "Resetting bundler configuration..."
+bundle config --delete path || true
+bundle config --delete without || true
+bundle config --local system true
 
 echo "Setting up new clean Gemfile..."
 cat > Gemfile << 'EOL'
@@ -30,6 +37,8 @@ gem "jekyll-graph"
 gem 'csv'
 gem 'base64'
 gem 'bigdecimal'
+# Include sassc explicitly without version constraint
+gem 'sassc'
 EOL
 
 echo "Pre-build setup completed" 
