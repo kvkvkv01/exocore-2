@@ -1,5 +1,5 @@
 [build]
-  command = "bundle update ffi && jekyll build"
+  command = "chmod +x build.sh && ./build.sh"
   publish = "_site"
 
 [build.environment]
