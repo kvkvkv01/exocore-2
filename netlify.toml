@@ -1,12 +1,13 @@
 # Netlify configuration for Jekyll site
 [build]
-  command = "chmod +x prebuild.sh && ./prebuild.sh && bundle install && bundle exec jekyll build"
+  command = "chmod +x prebuild.sh && ./prebuild.sh && bundle update sassc && bundle install && bundle exec jekyll build"
   publish = "_site"
 
 [build.environment]
   RUBY_VERSION = "2.7.2"
   BUNDLE_IGNORE_CONFIG = "true"
   JEKYLL_ENV = "production"
+  SKIP_BUNDLE_INSTALL = "true"
 
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
