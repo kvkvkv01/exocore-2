@@ -11,11 +11,11 @@ bundle config --delete path || true
 bundle config --delete without || true
 bundle config --local system true
 
-echo "Setting up new clean Gemfile..."
+echo "Setting up new clean Gemfile with NO version constraints..."
 cat > Gemfile << 'EOL'
 source 'https://rubygems.org'
 
-gem "jekyll", "4.2.1"
+gem "jekyll"
 gem "jekyll-optional-front-matter"
 gem "jekyll-default-layout"
 gem "jekyll-readme-index"
@@ -37,7 +37,6 @@ gem "jekyll-graph"
 gem 'csv'
 gem 'base64'
 gem 'bigdecimal'
-# Include sassc explicitly without version constraint
 gem 'sassc'
 EOL
 
