@@ -22,5 +22,4 @@ gem "jekyll-graph"
 gem 'csv'
 gem 'base64' 
 gem 'bigdecimal'
-gem 'ffi', '~> 1.15.5'
 gem 'sassc', '~> 2.4.0'

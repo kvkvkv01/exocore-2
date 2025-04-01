@@ -1,10 +1,10 @@
 [build]
-  command = "chmod +x build.sh && ./build.sh"
+  command = "chmod +x netlify-build.sh && ./netlify-build.sh"
   publish = "_site"
 
 [build.environment]
-  JEKYLL_ENV = "production"
   RUBY_VERSION = "2.7.2"
+  BUNDLE_WITHOUT = "development test"
 
 [[plugins]]
   package = "@netlify/plugin-sitemap"
