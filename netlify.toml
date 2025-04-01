@@ -1,21 +1,11 @@
-# Completely bypass Netlify's default bundler processing
+# Netlify configuration for Jekyll site
 [build]
+  command = "rm -f Gemfile.lock && bundle update && bundle install && bundle exec jekyll build"
   publish = "_site"
-  ignore = "false"
 
-# Use a custom build plugin to handle the Jekyll build process
-[[plugins]]
-  package = "@netlify/plugin-functions"
-
-[[plugins]]
-  package = "netlify-plugin-jekyll-build"
-  
-  [plugins.inputs]
-    jekyllVersion = "4.2.1"
-    skipBundleInstall = false
-    skipRubySetup = false
-    buildCommand = "rm -f Gemfile.lock && bundle _2.1.4_ update && bundle _2.1.4_ install --no-deployment && bundle _2.1.4_ exec jekyll build"
-    installCommand = "bundle update && bundle _2.1.4_ install"
+[build.environment]
+  RUBY_VERSION = "2.7.2"
+  BUNDLER_VERSION = "2.1.4"
 
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
